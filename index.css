@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Roboto',sans-serif;
+   margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5m;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: darkmagenta;
+}
+
+button:hover{
+    background-color: deeppink;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: black;
+}
+
+header .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.7em;
+
+}
+
+header.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+header nav{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: deeppink;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url('mario.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+#hero button{
+    font-size: 1.75em;
+
+}
+#hero h1{
+    color: white;
+}
+
+
+.color-acento{color: darkmagenta;}
+
+
+#Nombre1 .container{
+    text-align: center;
+    padding: 200px 12px;
+    text-align: center;
+}
+
+
+#categorias{
+    background-color: rgba(30, 30, 30);
+    color: white;
+
+}
+#categorias .container{
+    padding: 150px 12px;
+
+
+}
+
+#categorias h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#categorias p{
+    display: none;
+
+}
+
+#categorias .categoria{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.categoria:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url('mario.png');
+
+
+}
+
+.categoria:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url('mario.png');
+
+}
+.categoria:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url('mario.png');
+}
+
+
+#caracteristicas li{
+ margin: 15px 0px;
+ font-weight: bold;
+
+} 
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Ultima-Seccion{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:  center;
+    background-color: lightgray;
+    color: darkmagenta;
+
+}
+
+#Ultima-Seccion h2{
+    margin-top: 2em;
+    font-size: 7vw;
+}
+
+#Ultima-Seccion button{
+    margin-bottom: 2em;
+    font-size: 3vw;
+}
+
+footer .container{
+
+   height: 150px;
+   margin: 0;
+   color: white;
+
+}
+
+footer{
+    background-color: black ;
+}
+
+footer img {
+  width: 8%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  }
+
+footer img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+@media (min-width:1200px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+
+    }
+
+
+#Nombre1 .container{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+#Nombre1 .texto{
+    padding: 0px 30px;
+    max-width: 500px;
+    width: 50%;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+#Nombre1 .img-container{
+    background-image:url('Hongo.png');
+
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px;
+    }
+
+    #categorias .subcategorias{
+        display: flex;
+        justify-content: center;
+    }
+
+    #categorias p{
+        display: block;
+    }
+
+    #categorias .categoria{
+        padding: auto;
+    }
+
+#caracteristicas .container{
+    text-align: initial;
+}
+
+#caracteristicas{
+    background-image: url('perro.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: calc(100vw)120px;
+
+}
+}
